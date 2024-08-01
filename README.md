@@ -1,6 +1,6 @@
-# Cose - 혁신적인 여행 코스 생성 앱
+# Cose (캡스톤 디자인, 혁신적인 여행 코스 생성 앱)
 
-[![Flutter Version](https://img.shields.io/badge/Flutter-3.3.4-blue.svg)](https://flutter.dev/)
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.22.3-blue.svg)](https://flutter.dev/)
 [![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg)](https://github.com/Solido/awesome-flutter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -40,7 +40,7 @@
 
 ## 기술 스택
 
-- **프론트엔드**: Flutter 3.3.4
+- **프론트엔드**: Flutter 3.22.3
 - **상태 관리**: Riverpod 2.5.1
 - **지도 서비스**: Naver Maps API
 - **소셜 로그인**: Kakao, Google, Naver SDK
