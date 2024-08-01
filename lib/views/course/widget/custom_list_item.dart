@@ -40,7 +40,7 @@ class CustomListItem extends ConsumerWidget {
         padding: EdgeInsets.symmetric(vertical: height * 0.01, horizontal: width * 0.03),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: [
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5.0),
@@ -75,7 +75,7 @@ class CustomListItem extends ConsumerWidget {
                 padding: EdgeInsets.only(left: width * 0.03),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
+                  children: [
                     Text(
                       title,
                       maxLines: 2,

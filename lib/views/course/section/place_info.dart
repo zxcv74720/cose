@@ -38,7 +38,7 @@ class _PlaceInfoWidgetState extends ConsumerState<PlaceInfo> {
           padding: EdgeInsets.only(top: height * 0.02, left: width * 0.03, right: width * 0.03, bottom: height * 0.01),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+            children: [
               Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [

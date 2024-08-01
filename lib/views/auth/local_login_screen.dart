@@ -66,7 +66,7 @@ class _LocalLoginScreenState extends State<LocalLoginScreen> {
               key: formKey,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: [
                   SizedBox(height: height * 0.02),
                   CustomInputField(
                     label: '이메일',

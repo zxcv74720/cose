@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../utils/validations.dart';
-import '../../../widgets/custom_toast.dart';
 import '../../../widgets/custom_input_field.dart';
 import '../../providers/account/auth_provider.dart';
 import '../../widgets/custom_appbar.dart';
@@ -72,7 +71,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               key: formKey,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: [
                   SizedBox(height: height * 0.02),
                   CustomInputField(
                     label: '별명',
