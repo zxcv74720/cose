@@ -2,8 +2,8 @@ import 'package:cose_front/dto/place_response_dto.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'course_user_dto.dart';
 
-part 'course_response_dto.freezed.dart';
-part 'course_response_dto.g.dart';
+part 'generated/course_response_dto.freezed.dart';
+part 'generated/course_response_dto.g.dart';
 
 @freezed
 class CourseResponseDto with _$CourseResponseDto {

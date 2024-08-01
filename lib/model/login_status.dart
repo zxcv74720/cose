@@ -2,8 +2,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../enums/LoginPlatform.dart';
 
-part 'login_status.freezed.dart';
-part 'login_status.g.dart';
+part 'generated/login_status.freezed.dart';
+part 'generated/login_status.g.dart';
 
 @freezed
 class LoginStatus with _$LoginStatus {

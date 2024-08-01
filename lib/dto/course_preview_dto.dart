@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'course_preview_dto.freezed.dart';
-part 'course_preview_dto.g.dart';
+part 'generated/course_preview_dto.freezed.dart';
+part 'generated/course_preview_dto.g.dart';
 
 @freezed
 class CoursePreviewDto with _$CoursePreviewDto {

@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'place.dart';
+part of '../place_preview_dto.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,46 +14,44 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-Place _$PlaceFromJson(Map<String, dynamic> json) {
-  return _Place.fromJson(json);
+PlacePreviewDto _$PlacePreviewDtoFromJson(Map<String, dynamic> json) {
+  return _PlacePreviewDto.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Place {
-  int get id => throw _privateConstructorUsedError;
+mixin _$PlacePreviewDto {
   String get name => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
-  String get category => throw _privateConstructorUsedError;
+  String? get category => throw _privateConstructorUsedError;
   String get address => throw _privateConstructorUsedError;
   double get longitude => throw _privateConstructorUsedError;
   double get latitude => throw _privateConstructorUsedError;
-  int get placeOrder => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PlaceCopyWith<Place> get copyWith => throw _privateConstructorUsedError;
+  $PlacePreviewDtoCopyWith<PlacePreviewDto> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PlaceCopyWith<$Res> {
-  factory $PlaceCopyWith(Place value, $Res Function(Place) then) =
-      _$PlaceCopyWithImpl<$Res, Place>;
+abstract class $PlacePreviewDtoCopyWith<$Res> {
+  factory $PlacePreviewDtoCopyWith(
+          PlacePreviewDto value, $Res Function(PlacePreviewDto) then) =
+      _$PlacePreviewDtoCopyWithImpl<$Res, PlacePreviewDto>;
   @useResult
   $Res call(
-      {int id,
-      String name,
+      {String name,
       String url,
-      String category,
+      String? category,
       String address,
       double longitude,
-      double latitude,
-      int placeOrder});
+      double latitude});
 }
 
 /// @nodoc
-class _$PlaceCopyWithImpl<$Res, $Val extends Place>
-    implements $PlaceCopyWith<$Res> {
-  _$PlaceCopyWithImpl(this._value, this._then);
+class _$PlacePreviewDtoCopyWithImpl<$Res, $Val extends PlacePreviewDto>
+    implements $PlacePreviewDtoCopyWith<$Res> {
+  _$PlacePreviewDtoCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -63,20 +61,14 @@ class _$PlaceCopyWithImpl<$Res, $Val extends Place>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
     Object? name = null,
     Object? url = null,
-    Object? category = null,
+    Object? category = freezed,
     Object? address = null,
     Object? longitude = null,
     Object? latitude = null,
-    Object? placeOrder = null,
   }) {
     return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -85,10 +77,10 @@ class _$PlaceCopyWithImpl<$Res, $Val extends Place>
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      category: null == category
+      category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       address: null == address
           ? _value.address
           : address // ignore: cast_nullable_to_non_nullable
@@ -101,57 +93,46 @@ class _$PlaceCopyWithImpl<$Res, $Val extends Place>
           ? _value.latitude
           : latitude // ignore: cast_nullable_to_non_nullable
               as double,
-      placeOrder: null == placeOrder
-          ? _value.placeOrder
-          : placeOrder // ignore: cast_nullable_to_non_nullable
-              as int,
     ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$PlaceImplCopyWith<$Res> implements $PlaceCopyWith<$Res> {
-  factory _$$PlaceImplCopyWith(
-          _$PlaceImpl value, $Res Function(_$PlaceImpl) then) =
-      __$$PlaceImplCopyWithImpl<$Res>;
+abstract class _$$PlacePreviewDtoImplCopyWith<$Res>
+    implements $PlacePreviewDtoCopyWith<$Res> {
+  factory _$$PlacePreviewDtoImplCopyWith(_$PlacePreviewDtoImpl value,
+          $Res Function(_$PlacePreviewDtoImpl) then) =
+      __$$PlacePreviewDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
-      {int id,
-      String name,
+      {String name,
       String url,
-      String category,
+      String? category,
       String address,
       double longitude,
-      double latitude,
-      int placeOrder});
+      double latitude});
 }
 
 /// @nodoc
-class __$$PlaceImplCopyWithImpl<$Res>
-    extends _$PlaceCopyWithImpl<$Res, _$PlaceImpl>
-    implements _$$PlaceImplCopyWith<$Res> {
-  __$$PlaceImplCopyWithImpl(
-      _$PlaceImpl _value, $Res Function(_$PlaceImpl) _then)
+class __$$PlacePreviewDtoImplCopyWithImpl<$Res>
+    extends _$PlacePreviewDtoCopyWithImpl<$Res, _$PlacePreviewDtoImpl>
+    implements _$$PlacePreviewDtoImplCopyWith<$Res> {
+  __$$PlacePreviewDtoImplCopyWithImpl(
+      _$PlacePreviewDtoImpl _value, $Res Function(_$PlacePreviewDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
     Object? name = null,
     Object? url = null,
-    Object? category = null,
+    Object? category = freezed,
     Object? address = null,
     Object? longitude = null,
     Object? latitude = null,
-    Object? placeOrder = null,
   }) {
-    return _then(_$PlaceImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
+    return _then(_$PlacePreviewDtoImpl(
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -160,10 +141,10 @@ class __$$PlaceImplCopyWithImpl<$Res>
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      category: null == category
+      category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       address: null == address
           ? _value.address
           : address // ignore: cast_nullable_to_non_nullable
@@ -176,58 +157,47 @@ class __$$PlaceImplCopyWithImpl<$Res>
           ? _value.latitude
           : latitude // ignore: cast_nullable_to_non_nullable
               as double,
-      placeOrder: null == placeOrder
-          ? _value.placeOrder
-          : placeOrder // ignore: cast_nullable_to_non_nullable
-              as int,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$PlaceImpl implements _Place {
-  const _$PlaceImpl(
-      {required this.id,
-      required this.name,
+class _$PlacePreviewDtoImpl implements _PlacePreviewDto {
+  const _$PlacePreviewDtoImpl(
+      {required this.name,
       required this.url,
-      required this.category,
+      this.category,
       required this.address,
       required this.longitude,
-      required this.latitude,
-      required this.placeOrder});
+      required this.latitude});
 
-  factory _$PlaceImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PlaceImplFromJson(json);
+  factory _$PlacePreviewDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PlacePreviewDtoImplFromJson(json);
 
-  @override
-  final int id;
   @override
   final String name;
   @override
   final String url;
   @override
-  final String category;
+  final String? category;
   @override
   final String address;
   @override
   final double longitude;
   @override
   final double latitude;
-  @override
-  final int placeOrder;
 
   @override
   String toString() {
-    return 'Place(id: $id, name: $name, url: $url, category: $category, address: $address, longitude: $longitude, latitude: $latitude, placeOrder: $placeOrder)';
+    return 'PlacePreviewDto(name: $name, url: $url, category: $category, address: $address, longitude: $longitude, latitude: $latitude)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PlaceImpl &&
-            (identical(other.id, id) || other.id == id) &&
+            other is _$PlacePreviewDtoImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.category, category) ||
@@ -236,51 +206,47 @@ class _$PlaceImpl implements _Place {
             (identical(other.longitude, longitude) ||
                 other.longitude == longitude) &&
             (identical(other.latitude, latitude) ||
-                other.latitude == latitude) &&
-            (identical(other.placeOrder, placeOrder) ||
-                other.placeOrder == placeOrder));
+                other.latitude == latitude));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, url, category, address,
-      longitude, latitude, placeOrder);
+  int get hashCode => Object.hash(
+      runtimeType, name, url, category, address, longitude, latitude);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$PlaceImplCopyWith<_$PlaceImpl> get copyWith =>
-      __$$PlaceImplCopyWithImpl<_$PlaceImpl>(this, _$identity);
+  _$$PlacePreviewDtoImplCopyWith<_$PlacePreviewDtoImpl> get copyWith =>
+      __$$PlacePreviewDtoImplCopyWithImpl<_$PlacePreviewDtoImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PlaceImplToJson(
+    return _$$PlacePreviewDtoImplToJson(
       this,
     );
   }
 }
 
-abstract class _Place implements Place {
-  const factory _Place(
-      {required final int id,
-      required final String name,
+abstract class _PlacePreviewDto implements PlacePreviewDto {
+  const factory _PlacePreviewDto(
+      {required final String name,
       required final String url,
-      required final String category,
+      final String? category,
       required final String address,
       required final double longitude,
-      required final double latitude,
-      required final int placeOrder}) = _$PlaceImpl;
+      required final double latitude}) = _$PlacePreviewDtoImpl;
 
-  factory _Place.fromJson(Map<String, dynamic> json) = _$PlaceImpl.fromJson;
+  factory _PlacePreviewDto.fromJson(Map<String, dynamic> json) =
+      _$PlacePreviewDtoImpl.fromJson;
 
-  @override
-  int get id;
   @override
   String get name;
   @override
   String get url;
   @override
-  String get category;
+  String? get category;
   @override
   String get address;
   @override
@@ -288,9 +254,7 @@ abstract class _Place implements Place {
   @override
   double get latitude;
   @override
-  int get placeOrder;
-  @override
   @JsonKey(ignore: true)
-  _$$PlaceImplCopyWith<_$PlaceImpl> get copyWith =>
+  _$$PlacePreviewDtoImplCopyWith<_$PlacePreviewDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

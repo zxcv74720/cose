@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'user_response_dto.freezed.dart';
-part 'user_response_dto.g.dart';
+part 'generated/user_response_dto.freezed.dart';
+part 'generated/user_response_dto.g.dart';
 
 @freezed
 class UserResponseDto with _$UserResponseDto {

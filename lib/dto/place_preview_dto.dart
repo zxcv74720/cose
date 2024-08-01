@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'place_preview_dto.freezed.dart';
-part 'place_preview_dto.g.dart';
+part 'generated/place_preview_dto.freezed.dart';
+part 'generated/place_preview_dto.g.dart';
 
 @freezed
 class PlacePreviewDto with _$PlacePreviewDto {

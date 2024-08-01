@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'place_response_dto.freezed.dart';
-part 'place_response_dto.g.dart';
+part 'generated/place_response_dto.freezed.dart';
+part 'generated/place_response_dto.g.dart';
 
 @freezed
 class PlaceResponseDto with _$PlaceResponseDto {

@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'course_preview_dto.dart';
+part of '../course_preview_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator

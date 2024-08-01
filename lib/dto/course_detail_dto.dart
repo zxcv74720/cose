@@ -2,8 +2,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'package:cose_front/dto/place_response_dto.dart';
 
-part 'course_detail_dto.freezed.dart';
-part 'course_detail_dto.g.dart';
+part 'generated/course_detail_dto.freezed.dart';
+part 'generated/course_detail_dto.g.dart';
 
 
 @freezed

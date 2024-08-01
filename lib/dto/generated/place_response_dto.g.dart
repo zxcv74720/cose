@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'place_response_dto.dart';
+part of '../place_response_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
