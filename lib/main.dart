@@ -39,7 +39,7 @@ void main() async {
   //   storage.deleteAll();
   // }
 
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -47,21 +47,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ProviderScope(
-      child: Consumer(
-        builder: (context, ref, child) {
-          final themeMode = ref.watch(themeNotifierProvider);
+    return Consumer(
+      builder: (context, ref, child) {
+        final themeMode = ref.watch(themeNotifierProvider);
 
-          return MaterialApp.router(
-            debugShowCheckedModeBanner: false,
-            title: AppStrings.appTitle,
-            theme: lightTheme,
-            darkTheme: darkTheme,
-            themeMode: themeMode,
-            routerConfig: router,
-          );
-        },
-      ),
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          title: AppStrings.appTitle,
+          theme: lightTheme,
+          darkTheme: darkTheme,
+          themeMode: themeMode,
+          routerConfig: router,
+        );
+      },
     );
   }
 }
