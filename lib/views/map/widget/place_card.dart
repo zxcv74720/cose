@@ -3,10 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../dto/place_preview_dto.dart';
 import '../../../model/place.dart';
 import '../../../providers/course/course_creation_provider.dart';
-import '../../../providers/map/map_bottom_sheet_provider.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_text_style.dart';
 import '../../../utils/launch_url.dart';
+
+final PageController _pageController = PageController(viewportFraction: 0.9);
 
 class PlaceCard extends ConsumerWidget {
   final List<PlacePreviewDto> places;
@@ -23,8 +24,6 @@ class PlaceCard extends ConsumerWidget {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
 
-    final pageController = ref.watch(mapBottomSheetProvider);
-
     return Positioned(
       bottom: height * 0.02,
       left: 0,
@@ -32,7 +31,7 @@ class PlaceCard extends ConsumerWidget {
       child: SizedBox(
         height: height * 0.17,
         child: PageView.builder(
-          controller: pageController,
+          controller: _pageController,
           itemCount: places.length,
           itemBuilder: (context, index) {
             return _buildPlaceCard(places[index]);
